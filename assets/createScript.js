@@ -56,7 +56,30 @@ function createHeader(arrDatosNav) {
     body.appendChild(header);
 }
 
-function createMain() {
+function createMain(body) {
     let main = document.createElement('main');
+    let navMain = document.createElement('div');
+    navMain.setAttribute('class', 'navMain');
+    let showServices = document.createElement('div');
+    showServices.setAttribute('class', 'showServices');
+    let buscador = document.createElement('h3');
+    buscador.textContent = 'Buscador';
+    let categorias = document.createElement('h4');
+    categorias.textContent = 'Categorias';
+    let categoriesContainer = document.createElement('div');
+    categoriesContainer.setAttribute('class', 'catContainer');
 
+    //Funcion para crear las opciones del filtro de servicios
+    let checkFilter = document.createElement('input');
+    checkFilter.setAttribute('type', 'checkbox');
+    let checkFilterLbl = document.createElement('label');
+    checkFilterLbl.innerText = 'Peluqueria';
+    checkFilterLbl.appendChild(checkFilter);
+    categoriesContainer.appendChild(checkFilterLbl);
+    navMain.appendChild(buscador);
+    navMain.appendChild(categorias);
+    navMain.appendChild(categoriesContainer);
+    main.appendChild(navMain);
+    main.appendChild(showServices);
+    body.appendChild(main);
 }
