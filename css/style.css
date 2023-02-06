@@ -62,4 +62,57 @@ header > input[type=search]:-ms-input-placeholder {
 }
 header > input[type=search]::placeholder {
   color: red;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+main > div.navMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 15%;
+  background: #303030;
+  padding: 10px;
+}
+main > div.navMain > h3 {
+  color: white;
+  font-size: 1.5em;
+}
+main > div.navMain > h4 {
+  color: white;
+  align-self: flex-start;
+}
+main > div.navMain > div.catContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+main > div.navMain > div.catContainer > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-direction: row-reverse;
+  color: white;
+}
+main > div.navMain > div.catContainer > label > input {
+  margin-right: 10px;
+}
+main > .showServices {
+  width: 85%;
+  border: 1px solid red;
 }/*# sourceMappingURL=style.css.map */
