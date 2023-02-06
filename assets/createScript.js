@@ -14,7 +14,7 @@ function createHeader(arrDatosNav) {
     let logo = document.createElement('div');
     logo.classList.add('logo');
     let imgLogo = document.createElement('img');
-    imgLogo.src = '../images/logo.jpg';
+    imgLogo.src = '#';
     logo.appendChild(imgLogo);
     //PERFIL DEL USUARIO
     let profile = document.createElement('div');
