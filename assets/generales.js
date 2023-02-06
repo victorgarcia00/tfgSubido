@@ -20,4 +20,5 @@ function sendMesages(WHATSAPP_API, PHONE, TEXT, numTelefonoPropietario, mesageCh
 //*******************EJECUCION PRINCIPAL*************************/
 window.addEventListener('load', function() {
     createHeader(arrDatosNav);
+    createMain(body)
 });

@@ -55,3 +55,39 @@ header {
         color: red;
     }
 }
+main {
+    @include flexRow;
+    width: 100%;
+    &>div.navMain {
+        @include flexColumn;
+        width: 15%;
+        background: #303030;
+        padding: 10px;
+        &>h3 {
+            color: white;
+            font-size: 1.5em;
+        }
+        &>h4 {
+            color: white;
+            align-self: flex-start;
+        }
+        &>div.catContainer {
+            @include flexColumn;
+            width: 100%;
+            align-items: flex-start;
+            padding-left: 20px;
+            &>label {
+                @include flexRow;
+                flex-direction: row-reverse;
+                color: white;
+                &>input {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    &>.showServices {
+        width: 85%;
+        border: 1px solid red;
+    }
+}
